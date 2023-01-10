@@ -1,0 +1,63 @@
+/*general reset*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+img,
+picture {
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*css variables*/
+
+:root {
+    --ff-montserrat: 'Montserrat', sans-serif;
+
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    --clr-dark-gray: 160 2% 31%;           /* #4E5150 */
+    --clr-semi-dark-gray: 0 0% 20%;        /* #333333 */
+    --clr-gray: 0 0% 31%;                  /* #4F4F4F */
+    --clr-light-gray: 0 0% 51%;            /* #828282 */
+    --clr-orange: 28 87% 62%;              /* #F2994A */
+    --clr-semi-light-gray: 0 0% 74%;       /* #E0E0E0 */
+    --clr-off-white: 0 0% 88%;             /* #BDBDBD */
+    --clr-white: 0 0% 100%;                /* #FFFFFF */
+
+    --fs-100: 1rem;
+    --fs-200: 1.2rem;
+    --fs-300: 1.4rem;
+    --fs-400: 1.6rem;
+    --fs-500: 1.8rem;
+    --fs-800: 2.4rem;
+    --fs-900: 3.6rem;
+}
+
+body {
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-600);
+}
+
+.container {
+    max-width: 100rem;
+    margin-inline: auto;
+}
+
+.padding-inline {
+    padding-inline: 2rem;
+}
